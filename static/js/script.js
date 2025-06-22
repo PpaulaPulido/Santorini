@@ -3,6 +3,15 @@ import { productos } from './product.js';
 
 const menuContainer = document.getElementById("menu-container");
 
+document.getElementById('enter-site').addEventListener('click', function () {
+  const splash = document.getElementById('splash-screen');
+  splash.classList.add('fade-out');
+
+  setTimeout(() => {
+    splash.style.display = 'none';
+  }, 700);
+});
+
 function mostrarProductos(filtro = "Todos") {
   menuContainer.innerHTML = "";
 

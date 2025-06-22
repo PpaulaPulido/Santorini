@@ -12,6 +12,15 @@
 </head>
 
 <body>
+
+    <div id="splash-screen">
+        <div class="splash-content">
+            <img src="/static/img/logo.jpeg" alt="Logo" class="splash-logo" />
+            <button id="enter-site">Continuar</button>
+        </div>
+    </div>
+
+
     <header>
         <div class="position-relative">
             <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -40,7 +49,7 @@
         <!-- logo y nombre del bar -->
         <div class="d-flex align-items-center" id="brand-header">
             <div class="logo-circle">
-                <img src="/static/img/logo.jpeg" alt="Logo santorini" />
+                <img src="/static/img/logo_santorini.jpeg" alt="Logo santorini" />
             </div>
             <h1 class="brand-title">Santorini</h1>
         </div>
@@ -48,12 +57,15 @@
 
         <!-- Menú lateral -->
         <aside id="side-menu">
+            <div class="menu-logo-circle">
+                <img src="/static/img/logo_santorini.jpeg" alt="Logo santorini" />
+            </div>
             <div class="menu-header">
                 <strong>Categorías</strong>
                 <button id="close-menu">✕</button>
             </div>
             <ul>
-                <li><a href="#" data-categoria="todos">Todos</a></li>
+                <li><a href="#" data-categoria="Todos">Todos</a></li>
                 <li><a href="#" data-categoria="cervezas">Cervezas</a></li>
                 <li><a href="#" data-categoria="cocteles">Cócteles</a></li>
                 <li><a class="nav-link" href="#" data-categoria="sin_alcohol">Sin Alcohol</a></li>
